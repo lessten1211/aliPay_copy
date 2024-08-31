@@ -1,0 +1,32 @@
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll; /* 添加滚动条 */
+  position: relative; /* 设置为相对定位，以允许 .screem 位置调整 */
+  -webkit-overflow-scrolling: touch; /* 优化 iOS 设备上的滚动性能 */
+
+  .screem {
+    z-index: 0;
+    position: relative; /* 更改为相对定位，以适应滚动 */
+    box-sizing: border-box;
+    height: 92vh;
+    width: 100%;
+    background-color: #bb5050;
+    padding-bottom: 8vh; /* 留出底部 8vh 的空间 */
+
+    video {
+      width: 100%;
+      height: 100%; /* 调整为 100%，以填充 .screem 的高度 */
+      object-fit: cover; /* 确保视频覆盖整个容器，保持宽高比 */
+    }
+  }
+
+  .footer {
+    width: 100vw;
+    height: 8vh;
+    background-color: #fff;
+    border-top: 1px solid grey;
+    position: fixed;
+    bottom: 0;
+  }
+}

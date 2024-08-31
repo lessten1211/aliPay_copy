@@ -1,0 +1,76 @@
+.scanf-container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  #video {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* 确保视频填满容器 */
+    z-index: 0; /* 设置较低的层级叠放顺序 */
+    background-color: #ae1313; /* 背景颜色 */
+  
+  }
+  .z-container{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: transparent;
+    .comeback{
+      width: 15vw;
+      height: 15vw;
+      font-size: 1.7rem;
+      text-align: center;
+      line-height: 15vw;
+    }
+    .showPhoto{
+      position: absolute;
+      bottom: 20vh;
+      right: 2vw;
+      width: 30vw;
+      height: 25vh;
+      background-color: transparent;
+      .cancel{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+    .showPhotoClicked{
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      .cancel{
+        position: absolute;
+        top: 2vw;
+        left: 2vw;
+        font-size: 2rem;
+      }
+    }
+    .camera-icons{
+      position: absolute;
+      bottom: 20vh;
+      left: 40vw;
+      width: 20vw;
+      height: 20vw;
+      line-height: 20vw;
+      text-align: center;
+      font-size: 3rem;
+      border: 0.2rem solid black;
+      border-radius: 50%;
+      transition: transform 0.5s ease-in-out;
+      &:hover{
+      transform: scale(1.2); /* 放大 1.2 倍 */
+
+      }
+    }
+    }
+}
